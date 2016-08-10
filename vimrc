@@ -40,6 +40,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/a.vim'
 
+" ----- Working with Ultisnips ----------------------------------------------
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
@@ -101,7 +105,13 @@ set mouse=a
 set relativenumber
 
 " ----- Plugin-Specific Settings --------------------------------------
-
+" ------Ultisnips Settings --------------------
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 " ----- altercation/vim-colors-solarized settings -----
 
 " Uncomment the next line if your terminal is not configured for solarized
